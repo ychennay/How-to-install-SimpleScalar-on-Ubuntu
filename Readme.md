@@ -6,6 +6,8 @@
 
 2. Run the image as a Docker container: `docker run -ti simplescalar /bin/bash`
 
+# Original Instructions
+
 [SimpleScalar](http://www.simplescalar.com/) is a VLIW processor simulator. It allows to access measures like execution time, caches misses, and branch mis-prediction rates. It is entirely scalable: cache size and type, number of UAL entities, branch predictor types are customizable. It can be used as a tool for understanding Design-Space-Exploration. Unfortunately, the installation is a hassle due to an outdated code source.
 
 The following script intends to automate the installation process with Ubuntu. It has been tested with Ubuntu 16.04 LTS and gcc 4.6. It may not resolve all the errors you will have to face: don't hesitate to contribute if you think the script has to be improved. If you can choose not to use this simulator, you might want to take a glance at other simulators like [SoCLib](http://www.soclib.fr/) or [gem5](http://www.m5sim.org/). A more exhaustive list is available at [wikipedia (en)](http://en.wikipedia.org/wiki/Computer_architecture_simulator#Implementations)
