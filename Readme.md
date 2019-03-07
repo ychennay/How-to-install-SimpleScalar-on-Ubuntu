@@ -1,7 +1,10 @@
 # How-to install SimpleScalar on Ubuntu
 
-**EDIT June 2017: Using the Dockerfile, you can use this script whatever your OS. Install Docker, then follow comments at the top of Dockerfile.**
+# Using Docker
 
+1. Build image by using `docker build . -t simplescalar`
+
+2. Run the image as a Docker container: `docker run -ti simplescalar /bin/bash`
 
 [SimpleScalar](http://www.simplescalar.com/) is a VLIW processor simulator. It allows to access measures like execution time, caches misses, and branch mis-prediction rates. It is entirely scalable: cache size and type, number of UAL entities, branch predictor types are customizable. It can be used as a tool for understanding Design-Space-Exploration. Unfortunately, the installation is a hassle due to an outdated code source.
 
