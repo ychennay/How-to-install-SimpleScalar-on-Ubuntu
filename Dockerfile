@@ -11,7 +11,7 @@ RUN apt-get install -y bison flex gzip gcc-multilib libz1 vim libncurses5 libbz2
 COPY . .
 
 RUN ./install_simple_scalar.sh
-
+# set default shell executable to bash instead of sh, needed to run source
 SHELL ["/bin/bash", "-c"] 
-
+# reload global variables
 RUN source ~/.bashrc
